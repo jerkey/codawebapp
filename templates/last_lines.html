@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Last {{ lines|length }} lines:</h2>
+    <div style="white-space: pre-wrap;">
+        {% for line in lines %}
+            <div>{{ line }}</div>
+        {% endfor %}
+    </div>
+</body>
+</html>
